@@ -7,6 +7,8 @@ import "fmt"
 
 func main(){
 
+	n:=123
+	rever
 	// var strs map[string]bool
 	//strs =make(map[string]bool)
 	//l1:= &solutions.ListNode{
