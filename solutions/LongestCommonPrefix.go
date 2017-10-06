@@ -27,19 +27,9 @@ func longestCommonPrefix(strs []string) string {
 			if prefix==""{
 				break
 			}
-
 		}
 	}
 
-	//for _,str:=range strs{
-	//	length:=len(str)
-	//	fmt.Println(length)
-	//	if max<len(str){
-	//		max=length
-	//		prefix =str
-	//	}
-	//
-	//}
 	return prefix
 }
 func main() {
