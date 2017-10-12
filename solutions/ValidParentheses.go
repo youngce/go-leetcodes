@@ -22,7 +22,7 @@ func isValid(s string) bool {
 	var lastIndex int
 	lastIndex=-1
 	for _,r:=range s{
-		
+
 		if isLeft(r){
 			lastIndex+=1
 			stack=append(stack,r)
