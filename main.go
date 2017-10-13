@@ -7,30 +7,11 @@ import "fmt"
 
 func main(){
 
-	n:=123
-	rever
-	// var strs map[string]bool
-	//strs =make(map[string]bool)
-	//l1:= &solutions.ListNode{
-	//	Val:1,
-	//	Next:&solutions.ListNode{Val:8,},
-	//}
-	//l2:= &solutions.ListNode{
-	//	Val:0,
-	//
-	//}
+	nums:=[]int{1,2}
+	fmt.Println(nums[0])
+	for ; ;  {
+		continue
+	}
 
-
-	//solutions.listNodePrint(solutions.AddTwoNumbers(l1,l2))
-	s:= "c"
-
-	//
-	//for _,c:=range s[1:]{
-	//	strs[string(c)]=true
-	//}
-
-
-
-	fmt.Println(len(s))
 }
 
