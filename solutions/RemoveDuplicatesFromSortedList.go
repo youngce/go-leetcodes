@@ -11,5 +11,5 @@ func deleteDuplicates(head *ListNode) *ListNode {
 		head.Next=deleteDuplicates(head.Next)
 		return head
 	}
-	
+
 }
