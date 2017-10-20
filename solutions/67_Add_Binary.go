@@ -1,43 +1,38 @@
 package solutions
 
+import "strings"
 
 func getChar(s string,idx int) byte  {
 	return s[idx]
 }
 func addBinary(a string, b string) string {
-	len_a:=len(a)
-	len_b:=len(b)
-	if len_a<len_b{
-		return addBinary(b,a)
-	}
+	idx_a:=len(a)-1
+	idx_b:=len(b)-1
+	var s string
+	var carry,sum byte
 
+	for idx_a>=0 || idx_b>=0 {
 
-	diff:=len_a-len_b
-	res:=make([]byte,len_a+1)
-	for i:=len_a-1;i>=diff ;i--  {
-
-		res[i+1]= (a[i]+b[i-diff])-48
-
-	}
-	
-
-	for i := len_a; i > 0; i-- {
-
-		if i<=diff {
-			res[i]=res[i]+a[i-1]
-
+		sum=carry
+		if idx_a>=0{
+			sum+=a[idx_a]-'0'
+			idx_a--
 		}
-		b:=res[i]-48
-		v:=b/2
-		mod:=b%2
-		res[i]=mod+48
-		res[i-1]=res[i-1]+v
+		if idx_b>=0{
+			sum+=b[idx_b]-'0'
+			idx_b--
+		}
+		carry=sum/2
+		s=string(sum%2+'0')+s
+
+
+
 	}
-	if res[0]==0{
-		return string(res[1:])
+	if carry!=0{
+		s=string(sum%2+48)+s
 	}
-	res[0]=res[0]+48
-	return string(res)
+
+	return s
 
 
 
