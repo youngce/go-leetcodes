@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"math"
 )
 
 //import "./solutions"
@@ -15,7 +16,7 @@ func main(){
 
 
 
-	fmt.Println([]rune("AB"))
+	fmt.Println(math.Log(99)/math.Log(5))
 
 
 }
