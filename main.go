@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"math"
+
 )
 
 //import "./solutions"
@@ -11,12 +11,12 @@ import (
 
 func main(){
 
-	//nums:=[]int{1,2,3}
+	nums:=[]int{1,2,3}
 	//fmt.Println(nums[:2])
 
 
 
-	fmt.Println(math.Log(99)/math.Log(5))
+	fmt.Println(nums[0:2],nums[2:0])
 
 
 }
